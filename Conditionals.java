@@ -11,6 +11,7 @@ public class Conditionals {
     }
 
 
+    // switch 
     switch (age) {
       case 27:
         System.out.println("El SWITCH dice: Eres mayor de edad");
@@ -24,7 +25,6 @@ public class Conditionals {
      default:
       break;
     }
-
 
   }
 }
