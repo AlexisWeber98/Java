@@ -31,8 +31,16 @@ public class Strings {
 
 
     System.out.println("sin trim(): " + holaRey);
-    
+
     System.out.println("trim(): " + holaRey.trim());
 
+
+    System.out.println("replace: " + holaRey.replace("Rey", "Alexote!"));
+
+
+    System.out.println("replace espacios: " + holaRey.replace(" ", ""));
+
+
+    System.out.println(String.format("Hola, soy %s. y mi apellido es %s, tengo %d años", name, surname, 27));
   }
 }
