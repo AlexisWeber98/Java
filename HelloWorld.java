@@ -26,7 +26,11 @@ public class HelloWorld {
       Operations.main(new String[0]);
 
       Strings.main(new String[0]);
+ 
       Conditionals.main(new String[0]);
+
+      Arrays.main(new String[0]);
+
   }
 }
 
