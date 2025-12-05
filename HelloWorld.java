@@ -31,6 +31,7 @@ public class HelloWorld {
 
       Arrays.main(new String[0]);
 
+      List.main(new String[0]);
   }
 }
 
