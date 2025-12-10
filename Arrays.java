@@ -1,6 +1,5 @@
 public class Arrays {
-  public static void main (String[] args) {
-
+  public static void main(String[] args) {
 
     // Arrays
 
@@ -12,16 +11,13 @@ public class Arrays {
 
     System.out.println("Numbers array: " + numbers[1]);
 
-    int[] numbers2 = {1, 2, 3, 4, 5};
+    int[] numbers2 = { 1, 2, 3, 4, 5 };
 
     System.out.println("Numbers2 array: " + numbers2);
 
-    String[] names = {"Ale", "Juan", "Pedro"};
+    String[] names = { "Ale", "Juan", "Pedro" };
 
     System.out.println("names array: " + names[0]);
-
-
-
 
   }
 }

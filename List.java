@@ -6,19 +6,18 @@ public class List {
     // vieja sintxis
     ArrayList<String> names = new ArrayList<>();
 
-    //nueva sintxais
+    // nueva sintxais
     var numbers = new ArrayList<Integer>();
 
     System.out.println("ArrayList tamaño: " + names.size());
 
-    //añadir elementos
+    // añadir elementos
 
     numbers.add(1);
     numbers.add(5);
     numbers.add(10);
 
     names.add("Ale");
-
 
     System.out.println("ArrayList names tamaño: " + names.size());
 
@@ -38,7 +37,7 @@ public class List {
     System.out.println("Obtengo el elemento posicion 1 " + names.get(1));
 
     System.out.println("Obtengo el elemento posicion 1 " + numbers.get(1));
-    //modificar elemento
+    // modificar elemento
 
     names.set(1, "Carlos");
     System.out.println("Obtengo completo" + names);
@@ -46,16 +45,16 @@ public class List {
     numbers.set(1, 15);
     System.out.println("Obtengo completo" + numbers);
 
-    //remover elemento
+    // remover elemento
 
     names.remove(2);
     numbers.remove(0);
 
-   System.out.println("Obtengo completo" + numbers);
+    System.out.println("Obtengo completo" + numbers);
 
     System.out.println("Obtengo completo" + names);
 
-    //buscar elemento
+    // buscar elemento
 
     System.out.println("Contiene a Ale? " + names.contains("Ale"));
     System.out.println("Contiene a Juan? " + names.contains("Juan"));
@@ -67,4 +66,4 @@ public class List {
     names.clear();
     System.out.println("Limpiando lista names " + names);
   }
-} 
+}

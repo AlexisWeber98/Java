@@ -1,17 +1,16 @@
 public class Conditionals {
-  public static void main (String [] args){
+  public static void main(String[] args) {
 
     int age = 27;
 
     if (age >= 18) {
       System.out.println("Eres mayor de edad");
 
-    }else {
+    } else {
       System.out.println("Eres menor de edad");
     }
 
-
-    // switch 
+    // switch
     switch (age) {
       case 27:
         System.out.println("El SWITCH dice: Eres mayor de edad");
@@ -22,8 +21,8 @@ public class Conditionals {
       case 18:
         System.out.println("El SWITCH dice: Tienes 18 años");
         break;
-     default:
-      break;
+      default:
+        break;
     }
 
   }
