@@ -3,6 +3,10 @@ import java.util.HashSet;
 public class Sets {
   public static void main(String[] args) {
 
+    // no ordena los datos y no permite duplicados
+    // al tratarse de un conjunto no tiene indice
+    // al trabajar con conjuntos es muy eficiente para buscar, agregar y eliminar elementos
+
     HashSet<String> colors = new HashSet<>();
 
     HashSet<Integer> numbers = new HashSet<>();
@@ -47,5 +51,12 @@ public class Sets {
 
     colors.addAll(countries);
     System.out.println("Colors set after adding countries: " + colors);
+
+    colors.retainAll(countries);
+
+    System.out.println("Colors set after retainAll countries: " + colors);
+    colors.removeAll(countries);
+
+    System.out.println("Colors set after remove countries: " + colors);
   }
 }
