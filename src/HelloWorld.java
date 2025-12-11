@@ -30,6 +30,9 @@ public class HelloWorld {
     Arrays.main(new String[0]);
 
     List.main(new String[0]);
+
     Sets.main(new String[0]);
+
+    Maps.main(new String[0]);
   }
 }
