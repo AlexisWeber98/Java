@@ -24,6 +24,5 @@ public class Conditionals {
       default:
         break;
     }
-
   }
 }
