@@ -34,5 +34,7 @@ public class HelloWorld {
     Sets.main(new String[0]);
 
     Maps.main(new String[0]);
+
+    Loops.main(new String[0]);
   }
 }
