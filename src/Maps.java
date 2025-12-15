@@ -36,7 +36,7 @@ public class Maps {
 
     System.out.println("Contains key Ten: " + numbers.containsKey("Ten"));
 
-    // buscar pot value
+    // buscar por value
 
     names.containsValue("Juan");
 
@@ -48,6 +48,7 @@ public class Maps {
 
     System.out.println("Names map after remove A3: " + names);
     System.out.println("Numbers map after remove One: " + numbers);
+
     // limpiar
 
     names.clear();
@@ -56,6 +57,7 @@ public class Maps {
 
     // modificar elemento
     // put => si no existe lo crea, si existe lo modifica
+
     names.put("A2", "Carlos");
     System.out.println("Names map after modify A2: " + names);
 
@@ -72,5 +74,15 @@ public class Maps {
     names.putIfAbsent("A4", "Pedro");
 
     System.out.println("Names map after putIfAbsent A3: " + names);
+
+    // Obtener info
+
+    System.out.println("names map is empty?: " + names.isEmpty());
+
+    System.out.println("numbers map values: " + numbers.values());
+
+    var arrayListFromMap = new java.util.ArrayList<>(numbers.values());
+
+    System.out.println("ArrayList from numbers map values: " + arrayListFromMap);
   }
 }
