@@ -21,20 +21,31 @@ public class HelloWorld {
     // Llamado a main de DataTypes //
     DataTypes.main(new String[0]);
 
+    System.out.println("-------------- OPERATIONS ----------------");
     Operations.main(new String[0]);
 
+    System.out.println("-------------- STRINGS ----------------");
     Strings.main(new String[0]);
 
+    System.out.println("-------------- CONDITIONALS ----------------");
     Conditionals.main(new String[0]);
 
+    System.out.println("-------------- ARRAYS ----------------");
     Arrays.main(new String[0]);
 
+    System.out.println("-------------- LISTS ----------------");
     List.main(new String[0]);
 
+    System.out.println("-------------- SETS ----------------");
     Sets.main(new String[0]);
 
+    System.out.println("-------------- MAPS ----------------");
     Maps.main(new String[0]);
 
+    System.out.println("-------------- LOOPS ----------------");
     Loops.main(new String[0]);
+
+    System.out.println("-------------- FUNCTIONS ----------------");
+    Functions.main(new String[0]);
   }
 }

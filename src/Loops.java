@@ -10,11 +10,11 @@ public class Loops {
 
     System.out.println(" ------------------- FOR LOOP por contador --------------------------- ");
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 3; i++) {
       System.out.println("For Loop i: " + i);
     }
 
-    for (int j = 10; j >= 0; j--) {
+    for (int j = 5; j >= 0; j--) {
       System.out.println("For Loop i decrement: " + j);
     }
 
@@ -61,7 +61,7 @@ public class Loops {
     System.out.println(" ------------------- WHILE LOOP --------------------------- ");
 
     int index = 0;
-    while (index < 5) {
+    while (index < 3) {
       System.out.println("While Loop index: " + index);
       index++;
     }
@@ -85,22 +85,18 @@ public class Loops {
     do {
       System.out.println("Do While Loop index: " + index);
       index++;
-    } while (index < 5);
+    } while (index < 3);
 
     // control de bucles
 
-    for (String name : names) {
-      if (name.equals("Ale")) {
-        break;
-      }
-      System.out.println("Name before break: " + name);
-    }
+    // break y continue
 
-    for (int i = 0; i < 5; i++) {
-      if (i == 3) {
-        continue;
-      }
-      System.out.println("i value with continue: " + i);
-    }
+    /* do {
+
+    } while (true) {
+      System.out.println("This is an infinite loop using do while");
+      break;
+    }*/
+
   }
 }
