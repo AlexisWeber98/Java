@@ -1,0 +1,20 @@
+# Compiled classes
+*.class
+
+# Build outputs
+out/
+target/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Databases (H2 local files)
+*.db
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
