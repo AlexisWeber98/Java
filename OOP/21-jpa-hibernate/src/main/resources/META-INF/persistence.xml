@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+  <!-- Unidad de persistencia: la "configuración con nombre" que usa la app -->
+  <persistence-unit name="demoPU" transaction-type="RESOURCE_LOCAL">
+
+    <!-- Entidades del contexto. En proyectos grandes, Hibernate las detecta solo. -->
+    <class>modelo.Producto</class>
+
+    <properties>
+      <!-- Conexión: driver + url + credenciales (acá, H2 en archivo local) -->
+      <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:./basedemo"/>
+      <property name="jakarta.persistence.jdbc.user" value="sa"/>
+      <property name="jakarta.persistence.jdbc.password" value=""/>
+
+      <!-- Dialecto: cómo habla Hibernate del dialecto SQL particular de cada motor -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+      <!-- Estrategia de esquema: drop-and-create borra y recrea las tablas en cada arranque.
+           Perfecto para aprender; NUNCA en producción (ahí va validate o migraciones). -->
+      <property name="hibernate.hbm2ddl.auto" value="drop-and-create"/>
+
+      <!-- Mostrar el SQL real que genera Hibernate: oro para entender qué pasa -->
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
