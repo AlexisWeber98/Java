@@ -1,1 +1,30 @@
+# Java compiled classes
 *.class
+
+# Build outputs
+target/
+build/
+out/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Local databases and logs
+*.db
+*.mv.db
+*.trace.db
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
