@@ -28,3 +28,8 @@ bin/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+.ski  
+.atl/.skill-registry.cache.json
+.atl/skill-registry.md
