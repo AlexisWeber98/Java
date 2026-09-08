@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /* 
  * ------------------------ EJERCICIO ESTACIONAMIENTO ----------------------------
  *
@@ -22,4 +24,39 @@
  *  - la cantidad de estacionamientos de jornada completa 
  *  - la suma tetal de ingresos en $ que hubo durtante el dia
  *
- * */
+ *
+ */
+public class Integrator {
+
+public static void main(String[] args) {
+
+  Scanner console = new Scanner(System.in);
+
+  String patente; 
+  int turno;  // 1 = media jornada (5 hs ), 2 jornada cgompleta (10 hs), 3 = por hora
+
+
+
+    do {
+    System.out.println("Ingrese la patente del vehiculo (o FIN para terminar):");
+    patente = console.nextLine();
+
+      if(patente.isEmpty() || patente.isBlank()) {
+        System.out.println("La patente no puede estar vacia o en blanco. Por favor, ingrese una patente valida.");
+      } 
+
+    } while (patente.isEmpty() || patente.isBlank());
+
+    if(patente.equals("FIN")) {
+      System.out.println("Programa finalizado");
+      console.close();
+      return; 
+    }
+
+    System.out.println("SU PATENTE: " + patente);
+
+
+
+  }
+}
+
