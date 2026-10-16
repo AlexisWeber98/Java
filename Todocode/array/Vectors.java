@@ -23,8 +23,7 @@ public class Vectors {
 
     for (int i = 0; i < vector2.length; i++){
     System.out.println("Ingrese los valores");
-    int value = console.nextInt();
-      vector2[i] = value; 
+    vector2[i] = console.nextInt();
     }
   
     for (int i = 0; i < vector2.length; i++) {
